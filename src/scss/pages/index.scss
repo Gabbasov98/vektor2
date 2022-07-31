@@ -36,6 +36,7 @@
     position: relative;
   }
   &__img{
+    min-height: 2000px;
     width: 48.4%;
     margin: -33% auto 0;
     position: relative;
@@ -57,7 +58,7 @@
   }
   &__info4{
     left: 0;
-    top: 40%;
+    top: 43%;
   }
   &__btn{
     position: absolute;
@@ -416,6 +417,7 @@
       width: 100%;
       margin: 0 auto;
       max-width: 350px;
+      min-height: 1200px;
       img{
         max-width: 310px;
         margin-left: auto;
@@ -499,7 +501,7 @@
       right: 28%;
     }
     &__btn7{
-      right: 0%;
+      right: 42px;
       top: 58.5%;
     }
     &__btn8{

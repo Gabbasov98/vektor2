@@ -2,7 +2,7 @@ function featureSlider() {
     var swiper = new Swiper('.feature .swiper-container', {
         slidesPerView: 2,
         spaceBetween: 20,
-        speed: 2000,
+        speed: 300,
         autoplay: {
             delay: 3000
         },

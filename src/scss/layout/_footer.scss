@@ -26,6 +26,7 @@
     }
   }
   &__phone{
+    min-width: 226px;
     &-title{
       font-size: 16px;
       line-height: 162%;
@@ -43,6 +44,7 @@
     font-size: 14px;
     line-height: 19px;
     color: $gray;
+    min-width: 226px;
   }
 }
 
