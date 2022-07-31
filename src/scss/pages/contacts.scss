@@ -1,0 +1,36 @@
+@import "../vars";
+.consult--contacts{
+  margin-top: -55px;
+  padding: 70px 0 85px;
+}
+
+.map{
+  &__block{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .map{
+    &__block{
+      pointer-events: none;
+    }
+    &--active{
+      .map__block{
+        pointer-events: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .consult--contacts{
+    margin-top: -28px;
+    padding: 35px 0 45px;
+  }
+  .map{
+    &__block{
+      height: 500px;
+    }
+  }
+}
