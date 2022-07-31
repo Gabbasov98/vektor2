@@ -25,7 +25,7 @@ module.exports = function rastr() {
 					max: 90,
 					quality: 'high',
 					use: [pngquant({
-						quality: [0.8, 1],
+						quality: [1, 1],
 						strip: true,
 						speed: 1
 					})],
