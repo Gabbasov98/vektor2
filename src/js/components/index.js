@@ -45,3 +45,16 @@ function gallerySlider() {
 
 featureSlider()
 gallerySlider()
+
+
+let mainButtons = document.querySelectorAll(".main__btn ")
+
+mainButtons.forEach(el => {
+    el.onclick = function () {
+        console.log(this)
+        mainButtons.forEach(el => {
+            el.classList.remove("main__btn--active")
+        })
+        this.classList.toggle("main__btn--active")
+    }
+})
