@@ -1,0 +1,53 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+
+            <section class="service">
+                <div class="container">
+                    <div class="service__title display2">Сервисные работы</div>
+                    <div class="service__inner">
+                        <div class="service__group">
+                            <div class="service__img">
+                                <img src="img/service.png" alt="">
+                            </div>
+                            <div class="service__subtitle">Техническое обслуживание</div>
+                            <ul class="service__list mlist font2 body-text">
+                                <li>Ремонт</li>
+                                <li>Гарантийное и послегарантийное обслуживание</li>
+                                <li>Поставка запасных частей</li>
+                                <li>Монтаж оборудования</li>
+                                <li>Ввод в эксплуатацию</li>
+                            </ul>
+                        </div>
+                        <div class="service__group">
+                            <div class="service__img">
+                                <img src="img/service2.png" alt="">
+                            </div>
+                            <div class="service__subtitle">Монтаж/демонтаж и наладка оборудования</div>
+                            <ul class="service__list mlist font2 body-text">
+                                <li>Установка подъемного оборудования</li>
+                                <li>Пуско-наладочные работы</li>
+                                <li>Обслуживание</li>
+                                <li>Консультирование и оказание помощи при сдаче оборудования в эксплуатацию</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

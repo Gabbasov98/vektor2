@@ -1,0 +1,114 @@
+@import "../vars";
+.body-text{
+  font-size: 16px;
+  line-height: 162.5%;
+}
+
+.body-text2{
+  font-size: 14px;
+  line-height: 136%;
+}
+
+.display1{
+  font-size: 38px;
+  line-height: 134%;
+  font-weight: 700;
+}
+
+.display2{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+}
+
+.display3{
+  font-size: 24px;
+  line-height: 133%;
+  font-weight: 600;
+}
+
+.display4{
+  font-size: 18px;
+  line-height: 155%;
+  font-weight: 700;
+}
+
+p{
+  line-height: inherit;
+  &:not(:last-child){
+    margin-bottom: 24px;
+  }
+}
+
+.font2{
+  font-family: $font2;
+}
+
+.mlist {
+  li {
+    line-height: inherit;
+    padding-left: 28px;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 16px;
+      height: 2px;
+      border-radius: 4px;
+      background-color: $primary;
+      left: 0;
+      top: 12.5px;
+    }
+    a {
+      color: $primary;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.text-link{
+  color: $primary;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px){
+  .display1{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .display1{
+    font-size: 26px;
+  }
+  .display2{
+    font-size: 20px;
+    line-height: 125%;
+  }
+  .display3{
+    font-size: 18px;
+    line-height: 138%;
+  }
+  .display4{
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .body-text{
+    font-size: 13px;
+  }
+  p{
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+  .body-text2{
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../vars";
+.footer{
+  padding: 55px 0 59px;
+  border-top: $border;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 162%;
+    font-weight: 600;
+    margin-right: 46px;
+    &--active{
+      color: $primary;
+    }
+  }
+  &__phone{
+    &-title{
+      font-size: 16px;
+      line-height: 162%;
+      color: $gray;
+    }
+    &-link{
+      font-size: 22px;
+      line-height: 127%;
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+  &__copyright,
+  &__by{
+    font-size: 14px;
+    line-height: 19px;
+    color: $gray;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .footer{
+    padding: 39px 0 44px;
+    &__bottom{
+      margin-top: 7px;
+      display: block;
+    }
+    &__nav{
+      flex-direction: column;
+      align-items: unset;
+    }
+    &__link{
+      margin: 0 0 18px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    &__phone{
+      &-title{
+        font-size: 12px;
+        line-height: 21px;
+      }
+      &-link{
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+    &__copyright,
+    &__by{
+      font-size: 12px;
+      line-height: 17px;
+    }
+    &__by{
+      margin-top: 8px;
+    }
+  }
+}
